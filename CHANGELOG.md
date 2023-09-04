@@ -1,3 +1,21 @@
+# v0.1.3 (Mon Sep 04 2023)
+
+#### 🐛 Bug Fix
+
+- make Button pop [#1](https://github.com/cristiannietodev91/ui-forms-cs/pull/1) ([@cristiannietodev91](https://github.com/cristiannietodev91))
+
+#### ⚠️ Pushed to `main`
+
+- Storybook deployment with GitHub action ([@cristiannietodev91](https://github.com/cristiannietodev91))
+- Add storybook and setting global styles ([@cristiannietodev91](https://github.com/cristiannietodev91))
+- first commit ([@cristiannietodev91](https://github.com/cristiannietodev91))
+
+#### Authors: 1
+
+- Cristian Nieto ([@cristiannietodev91](https://github.com/cristiannietodev91))
+
+---
+
 # v0.1.2 (Mon Sep 04 2023)
 
 #### 🐛 Bug Fix
