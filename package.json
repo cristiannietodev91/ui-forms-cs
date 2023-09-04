@@ -1,7 +1,13 @@
 {
-  "name": "ui-forms",
+  "name": "@cristian.nieto.dev/ui-forms",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "The Storybook design system tutorial is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristiannietodev91/ui-forms-cs.git"
+  },
+  "author": "Cristian Nieto <cristianandresnieto@gmail.com>",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -78,5 +84,8 @@
       "optional": true
     }
   },
-  "_id": "ui-forms@0.1.0"
+  "bugs": {
+    "url": "https://github.com/cristiannietodev91/ui-forms-cs/issues"
+  },
+  "homepage": "https://github.com/cristiannietodev91/ui-forms-cs#readme"
 }
