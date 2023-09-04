@@ -39,25 +39,28 @@ const Users = styled.ul`
       margin-left: -6px;
     }
     &:nth-child(1) {
-      z-index: 3;
+      z-index: 4;
     }
     &:nth-child(2) {
-      z-index: 2;
+      z-index: 3;
     }
     &:nth-child(3) {
+      z-index: 2;
+    }
+    &:nth-child(4) {
       z-index: 1;
     }
   }
 `;
 
 /**
- * A list of Avatars, ellipsized to at most 3. Supports passing only a subset of the total user count.
+ * A list of Avatars, ellipsized to at most 4. Supports passing only a subset of the total user count.
  */
 export function AvatarList({ loading, users, userCount, size, ...props }) {
   const count = userCount || users.length;
   return (
     <Users aria-label='users' {...props}>
-      {users.slice(0, 3).map(({ id, name, avatarUrl }) => (
+      {users.slice(0, 4).map(({ id, name, avatarUrl }) => (
         <User key={id}>
           <UserAvatar
             size={size}
@@ -67,10 +70,10 @@ export function AvatarList({ loading, users, userCount, size, ...props }) {
           />
         </User>
       ))}
-      {count > 3 && (
-        <UserEllipses aria-label={`${count - 3} more user(s)`}>
+      {count > 4 && (
+        <UserEllipses aria-label={`${count - 4} more user(s)`}>
           {' '}
-          &#43; {count - 3}{' '}
+          &#43; {count - 4}{' '}
         </UserEllipses>
       )}
     </Users>
@@ -83,7 +86,7 @@ AvatarList.propTypes = {
    */
   loading: PropTypes.bool,
   /**
-   * A (sub)-list of the users whose avatars we have data for. Note: only 3 will be displayed.
+   * A (sub)-list of the users whose avatars we have data for. Note: only 4 will be displayed.
    */
   users: PropTypes.arrayOf(
     PropTypes.shape({
@@ -108,6 +111,7 @@ AvatarList.defaultProps = {
     { id: 'loading', avatarUrl: null, name: 'loading' },
     { id: 'loading2', avatarUrl: null, name: 'loading' },
     { id: 'loading3', avatarUrl: null, name: 'loading' },
+    { id: 'loading4', avatarUrl: null, name: 'loading' },
   ],
   userCount: null,
   size: 'medium',

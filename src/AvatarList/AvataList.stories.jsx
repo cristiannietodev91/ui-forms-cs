@@ -51,6 +51,11 @@ export const Ellipsized = {
         name: 'Tim Hingston',
         avatarUrl: 'https://avatars3.githubusercontent.com/u/1831709',
       },
+      {
+        id: '5',
+        name: 'Tim Hingston',
+        avatarUrl: 'https://avatars3.githubusercontent.com/u/131709',
+      },
     ],
   },
 };
